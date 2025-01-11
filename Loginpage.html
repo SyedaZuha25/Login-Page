@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page</title>
+	<style>
+		body{
+			font-family: arial,sans-serif;
+			padding: 0px;
+			margin: 0px;
+			justify-content: center;
+			height:200vh ;
+			align-items: center;
+			background-color: mintcream;
+			background-size: cover;
+		}
+
+.place{
+			background-color: skyblue;
+			border-radius: 15px;
+			text-align: center;
+			line-height: 1.3;
+			box-shadow: 20px,50px,45px rgba(0.0.0.1);
+			padding: 40px;
+			width: 100%;
+			margin-top:35px ;
+			margin-left: 460px;
+			max-width: 250px;
+		}
+
+		h1 {
+			font-size: 35px;
+			margin-bottom: 10px;
+			color: skyblue;
+			text-align: center;
+		}
+
+		p {
+			font-size: 20px;
+			color: skyblue;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		p a {
+			color: darkcyan;
+			text-decoration: none;
+		}
+
+		form {
+			text-align: center;
+		}
+
+		label {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 8px;
+			color: mintcream;
+		}
+
+		input[type="text"], input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 15px;
+			border: 1px solid mintcream;
+			border-radius: 4px;
+			font-size: 14px;
+		}
+
+		input[type="checkbox"] {
+			accent-color: mintcream;
+			transform: scale(1.1);
+		}
+
+		.checkbox{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 10px 0;
+		}
+
+		.checkbox label {
+			font-size: 18px;
+			color: mintcream;
+		}
+
+		.button {
+			color: mintcream;
+			background-color: skyblue;
+			font-size: 18px;
+			margin-top: 5px;
+			border: 2px solid mintcream;
+			padding: 10px 20px;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.help-links {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.help-links a {
+			color: darkcyan;
+			text-decoration: none;
+			margin: 5px;
+			display: block;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Log in</h1>
+		<p>Need a Mailchimp account? <u><a href="#">Create an account</a></u></p>
+		<form method="post" class="place">
+			<label>Username or Email</label>
+			<input type="text" name="username" required>
+			<label>Password</label>
+			<input type="password" name="password" required>
+			<div class="checkbox">
+				<input type="checkbox" id="keep-logged-in">
+				<label for="keep-logged-in">Keep me logged in</label>
+			</div>
+			<button class="button">Log in</button>
+		</form>
+		<div class="help-links">
+			<a href="#">Forgot username?</a>
+			<a href="#">Forgot password?</a>
+			<a href="#">Can't log in?</a>
+		</div>
+	</div>
+</body>
+</html>
